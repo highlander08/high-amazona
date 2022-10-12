@@ -78,233 +78,233 @@ $ npm start
 
 # Lessons
 
-1. Introduction
-2. Install Tools
-3. Create React App
-4. Create Git Repository
-5. List Products
-   1. create products array
-   2. add product images
-   3. render products
-   4. style products
-6. Add page routing
+1. Introdução
+2. Instalar Ferramentas
+3. Crie o aplicativo React
+4. Crie um repositório Git
+5. Listar produtos
+   1. criar matriz de produtos
+   2. adicione imagens do produto
+   3. renderizar produtos
+   4. produtos de estilo
+6. Adicionar roteamento de página
    1. npm i react-router-dom
-   2. create route for home screen
-   3. create router for product screen
-7. Create Node.JS Server
-   1. run npm init in root folder
-   2. Update package.json set type: module
-   3. Add .js to imports
-   4. npm install express
-   5. create server.js
-   6. add start command as node backend/server.js
-   7. require express
-   8. create route for / return backend is ready.
-   9. move products.js from frontend to backend
-   10. create route for /api/products
-   11. return products
-   12. run npm start
-8. Fetch Products From Backend
-   1. set proxy in package.json
-   2. npm install axios
-   3. use state hook
-   4. use effect hook
-   5. use reducer hook
-9. Manage State By Reducer Hook
-   1. define reducer
-   2. update fetch data
-   3. get state from usReducer
-10. Add bootstrap UI Framework
+   2. crie uma rota para a tela inicial
+   3. crie um roteador para a tela do produto
+7. Criar servidor Node.JS
+   1. execute npm init na pasta raiz
+   2. Atualize o tipo de conjunto package.json: módulo
+   3. Adicione .js às importações
+   4. npm instalar expresso
+   5. crie server.js
+   6. adicione o comando start como nó back-end/server.js
+   7. exigir expresso
+   8. Criar rota para / backend de retorno está pronto.
+   9. mova o products.js do front-end para o back-end
+   10. crie uma rota para /api/products
+   11. devolver produtos
+   12. execute npm start
+8. Buscar produtos do back-end
+   1. defina o proxy em package.json
+   2. npm instala axios
+   3. use o gancho de estado
+   4. use gancho de efeito
+   5. use o gancho redutor
+9. Gerenciar o estado pelo gancho do redutor
+   1. definir redutor
+   2. atualizar dados de busca
+   3. obtenha o estado de usReducer
+10. Adicionar estrutura de interface do usuário de bootstrap
     1. npm install react-bootstrap bootstrap
-    2. update App.js
-11. Create Product and Rating Component
-    1. create Rating component
-    2. Create Product component
-    3. Use Rating component in Product component
-12. Create Product Details Screen
-    1. fetch product from backend
-    2. create 3 columns for image, info and action
-13. Create Loading and Message Component
-    1. create loading component
-    2. use spinner component
-    3. craete message component
-    4. create utils.js to define getError fuction
-14. Create React Context For Add Item To Cart
-    1. Create React Context
-    2. define reducer
-    3. create store provider
-    4. implement add to cart button click handler
-15. Complete Add To Cart
-    1. check exist item in the cart
-    2. check count in stock in backend
-16. Create Cart Screen
-    1. create 2 columns
-    2. display items list
-    3. create action column
-17. Complete Cart Screen
-    1. click handler for inc/dec item
-    2. click handler for remove item
-    3. click handler for checkout
-18. Create Signin Screen
-    1. create sign in form
-    2. add email and password
-    3. add signin button
-19. Connect To MongoDB Database
-    1. create atlas monogodb database
-    2. install local mongodb database
-    3. npm install mongoose
-    4. connect to mongodb database
-20. Seed Sample Products
-    1. create Product model
-    2. create seed route
-    3. use route in server.js
-    4. seed sample product
-21. Seed Sample Users
-    1. create user model
-    2. seed sample users
-22. Create Signin Backend API
-    1. create signin api
-    2. npm install jsonwebtoken
-    3. define generateToken
-23. Complete Signin Screen
-    1. handle submit action
-    2. save token in store and local storage
-    3. show user name in header
-24. Create Shipping Screen
-    1. create form inputs
-    2. handle save shipping address
-    3. add checkout wizard bar
-25. Create Sign Up Screen
-    1. create input forms
-    2. handle submit
-    3. create backend api
-26. Implement Select Payment Method Screen
-    1. create input forms
-    2. handle submit
-27. Create Place Order Screen
-    1. show cart items, payment and address
-    2. calculate order summary
-28. Implement Place Order Action
-    1. handle place order action
-    2. create order create api
-29. Create Order Screen
-    1. create backend api for order/:id
-    2. fetch order api in frontend
-    3. show order information in 2 cloumns
-30. Pay Order By PayPal
-    1. generate paypal client id
-    2. create api to return client id
-    3. install react-paypal-js
-    4. use PayPalScriptProvider in index.js
-    5. use usePayPalScriptReducer in Order Screen
-    6. implement loadPaypalScript function
-    7. render paypal button
-    8. implement onApprove payment function
-    9. create pay order api in backend
-31. Display Order History
-    1. create order screen
-    2. create order history api
-    3. use api in the frontend
-32. Create Profile Screen
-    1. get user info from context
-    2. show user information
-    3. create user update api
-    4. update user info
-33. Publish To Heroku
-    1. create and config node project
-    2. serve build folder in frontend folder
-    3. Create heroku account
-    4. connect it to github
-    5. Create mongodb atlas database
-    6. Set database connection in heroku env variables
-    7. Commit and push
-34. Add Sidebar and Search Box
-    1. add sidebar
-    2. add search box
-35. Create Search Screen
-    1. show filters
-    2. create api for searching products
-    3. display results
-36. Create Admin Menu
-    1. define protected route component
-    2. define admin route component
-    3. add menu for admin in header
-37. Create Dashboard Screen
-    1. create dashboard ui
-    2. implement backend api
-    3. connect ui to backend
-38. Manage Products
-    1. create products list ui
-    2. implement backend api
-    3. fetch data
-39. Create Product
-    1. create products button
-    2. implement backend api
-    3. handle on click
-40. Create Edit Product
-    1. create edit button
-    2. create edit product ui
-    3. dispaly product info in the input boxes
-41. Implement Update Product
-    1. create edit product backend api
-    2. handle update click
-42. Upload Product Image
-    1. create cloudinary account
-    2. use the api key in env file
-    3. handle upload file
-    4. implement backend api to upload
-43. Delete Product
-    1. show delete button
-    2. implement backend api
-    3. handle on click
-44. List Orders
-    1. create order list screen
-    2. implement backen api
-    3. fetch and display orders
-45. Deliver Order
-    1. add deliver button
-    2. handle click action
-    3. implement backen api for deliver
-46. Delete Order
-    1. add delete button
-    2. handle click action
-    3. implement backen api for delete
-47. List Users
-    1. create user list screen
-    2. implement backen api
-    3. fetch and display users
-48. Edit User
-    1. create edit button
-    2. create edit product ui
-    3. dispaly product info in the input boxes
-    4. implement backend api
-    5. handle edit click
-49. Delete User
-    1. add delete button
-    2. handle click action
-    3. implement backen api for delete
-50. Choose Address On Google Map
-    1. create google map credentials
-    2. update .env file with Google Api Key
-    3. create api to send google api to frontend
-    4. create map screen
-    5. fetch google api
+    2. atualize o App.js
+11. Criar Produto e Componente de Classificação
+    1. criar componente de classificação
+    2. Criar componente de produto
+    3. Use o componente Classificação no componente Produto
+12. Tela Criar Detalhes do Produto
+    1. buscar produto do back-end
+    2. crie 3 colunas para imagem, informação e ação
+13. Criar Componente de Carregamento e Mensagem
+    1. criar componente de carregamento
+    2. use o componente giratório
+    3. Criar componente de mensagem
+    4. crie utils.js para definir a função getError
+14. Criar contexto de reação para adicionar item ao carrinho
+    1. Criar contexto de reação
+    2. definir redutor
+    3. criar provedor de loja
+    4. implemente o gerenciador de cliques do botão adicionar ao carrinho
+15. Complete Adicionar ao Carrinho
+    1. verifique se existe um item no carrinho
+    2. verifique a contagem em estoque no back-end
+16. Tela Criar Carrinho
+    1. crie 2 colunas
+    2. exibir lista de itens
+    3. criar coluna de ação
+17. Tela Completa do Carrinho
+    1. clique no manipulador para item inc/dec
+    2. clique no manipulador para remover o item
+    3. clique no gerenciador para finalizar a compra
+18. Criar tela de login
+    1. criar formulário de login
+    2. adicione e-mail e senha
+    3. Adicionar botão de login
+19. Conecte-se ao banco de dados MongoDB
+    1. criar banco de dados atlas monogodb
+    2. instale o banco de dados mongodb local
+    3. npm instala mangusto
+    4. Conecte-se ao banco de dados mongodb
+20. Produtos de Amostra de Sementes
+    1. criar modelo de produto
+    2. criar rota de semente
+    3. use a rota em server.js
+    4. produto de amostra de sementes
+21. Usuários de amostras de sementes
+    1. criar modelo de usuário
+    2. usuários de amostras de sementes
+22. Criar API de back-end de login
+    1. crie uma API de login
+    2. npm instala jsonwebtoken
+    3. defina gerarToken
+23. Tela de login completa
+    1. lidar com a ação de envio
+    2. salve o token na loja e no armazenamento local
+    3. mostre o nome de usuário no cabeçalho
+24. Criar tela de envio
+    1. criar entradas de formulário
+    2. lidar com salvar endereço de entrega
+    3. adicione a barra do assistente de checkout
+25. Criar tela de inscrição
+    1. criar formulários de entrada
+    2. lidar com envio
+    3. crie uma API de back-end
+26. Implementar a tela de seleção de método de pagamento
+    1. criar formulários de entrada
+    2. lidar com envio
+27. Tela Criar pedido de colocação
+    1. mostre os itens do carrinho, pagamento e endereço
+    2. calcular o resumo do pedido
+28. Implementar Ação de Encomenda
+    1. lidar com a ação do pedido
+    2. criar pedido criar api
+29. Tela Criar Pedido
+    1. crie uma API de back-end para order/:id
+    2. buscar a API de pedidos no frontend
+    3. mostre as informações do pedido em 2 cloumns
+30. Ordem de pagamento por PayPal
+    1. gerar id de cliente paypal
+    2. crie uma API para retornar o ID do cliente
+    3. instale react-paypal-js
+    4. use o PayPalScriptProvider em index.js
+    5. use usePayPalScriptReducer na tela de pedidos
+    6. Implemente a função loadPaypalScript
+    7. botão de renderização do paypal
+    8. implementar a função de pagamento onApprove
+    9. crie a API de ordem de pagamento no back-end
+31. Exibir histórico de pedidos
+    1. criar tela de pedido
+    2. crie a API do histórico de pedidos
+    3. use api no frontend
+32. Tela Criar Perfil
+    1. obtenha informações do usuário a partir do contexto
+    2. mostrar informações do usuário
+    3. crie a API de atualização do usuário
+    4. atualizar as informações do usuário
+33. Publicar no Heroku
+    1. criar e configurar o projeto do nó
+    2. servir a pasta de compilação na pasta de front-end
+    3. Crie uma conta heroku
+    4. conecte-o ao github
+    5. Crie o banco de dados do atlas mongodb
+    6. Defina a conexão do banco de dados nas variáveis ​​​​env do heroku
+    7. Comprometa-se e empurre
+34. Adicionar Barra Lateral e Caixa de Pesquisa
+    1. adicionar barra lateral
+    2. adicionar caixa de pesquisa
+35. Criar tela de pesquisa
+    1. Mostrar filtros
+    2. crie uma API para pesquisar produtos
+    3. exibir resultados
+36. Criar Menu Admin
+    1. definir componente de rota protegida
+    2. definir o componente de rota de administrador
+    3. adicionar menu para admin no cabeçalho
+37. Criar tela do painel
+    1. crie a interface do usuário do painel
+    2. implemente a API de back-end
+    3. conecte a interface do usuário ao back-end
+38. Gerenciar Produtos
+    1. crie a interface do usuário da lista de produtos
+    2. implemente a API de back-end
+    3. buscar dados
+39. Criar Produto
+    1. botão criar produtos
+    2. implemente a API de back-end
+    3. manuseie ao clicar
+40. Criar Edição do produto
+    1. criar botão de edição
+    2. crie editar a interface do usuário do produto
+    3. exiba informações do produto nas caixas de entrada
+41. Implementar Produto de Atualização
+    1. crie a API de back-end do produto de edição
+    2. lidar com o clique de atualização
+42. Carregar imagem do produto
+    1. crie uma conta cloudinary
+    2. use a chave api no arquivo env
+    3. lidar com o arquivo de upload
+    4. implemente a API de back-end para fazer upload
+43. Excluir Produto
+    1. mostrar o botão excluir
+    2. implemente a API de back-end
+    3. manuseie ao clicar
+44. Listar Pedidos
+    1. criar tela de lista de pedidos
+    2. implemente a API de backen
+    3. buscar e exibir pedidos
+45. Entregar Pedido
+    1. adicionar botão de entrega
+    2. lidar com a ação de clique
+    3. Implemente a API de backen para entrega
+46. ​​Excluir pedido
+    1. adicionar botão de exclusão
+    2. lidar com a ação de clique
+    3. Implemente a API de backen para exclusão
+47. Listar usuários
+    1. criar tela de lista de usuários
+    2. implemente a API de backen
+    3. buscar e exibir usuários
+48. Editar usuário
+    1. criar botão de edição
+    2. crie editar a interface do usuário do produto
+    3. exiba informações do produto nas caixas de entrada
+    4. Implemente a API de back-end
+    5. lidar com o clique de edição
+49. Excluir usuário
+    1. adicionar botão de exclusão
+    2. lidar com a ação de clique
+    3. Implemente a API de backen para exclusão
+50. Escolha o endereço no mapa do Google
+    1. crie credenciais do Google Maps
+    2. atualize o arquivo .env com a chave de API do Google
+    3. crie uma API para enviar a API do Google para o frontend
+    4. criar tela de mapa
+    5. buscar a API do Google
     6. getUserLocation
-    7. install @react-google-maps/api
-    8. use it in shipping screen
-    9. apply map to the checkout screen
-51. Email order receipt by mailgun
-    1. create mailgun account
-    2. add and verify your domain to mailgun
-    3. install mailgun-js
-    4. set api key in env file
-    5. change pay order in orderRouter
-    6. send email order receipt
-52. Review Products
-    1. create submit review form
-    2. handle submit
-    3. implement backend api for review
-53. Upload multiple Images
-    1. add images to product model
-    2. get images in edit screen
-    3. show images in product screen
+    7. instale @react-google-maps/api
+    8. use-o na tela de envio
+    9. aplique o mapa na tela de checkout
+51. Recibo de pedido por e-mail por arma postal
+    1. crie uma conta de espingarda
+    2. adicione e verifique seu domínio no mailgun
+    3. instale mailgun-js
+    4. defina a chave api no arquivo env
+    5. alterar a ordem de pagamento em orderRouter
+    6. enviar recibo de pedido por e-mail
+52. Revisar Produtos
+    1. criar formulário de revisão de envio
+    2. lidar com envio
+    3. Implemente a API de back-end para revisão
+53. Faça upload de várias imagens
+    1. adicione imagens ao modelo do produto
+    2. obtenha imagens na tela de edição
+    3. mostre imagens na tela do produto
